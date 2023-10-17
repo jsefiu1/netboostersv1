@@ -1,0 +1,250 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.header-content {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: bold;
+  color: #18869c;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li a {
+  margin: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(124, 124, 124);
+  font-weight: 400;
+}
+
+.navbar li a:hover {
+  color: #18869c;
+}
+/*============ Header ===============*/
+
+/*============ Section1 ===============*/
+
+#banner .img {
+  height: calc(100vh - 70px);
+  background-image: url("img/bannerr.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#banner .banner-text {
+  position: absolute;
+  bottom: 40%;
+  right: 35%;
+  text-align: center;
+}
+#banner .banner-text h2 {
+  width: 350px;
+  color: #fff;
+  /* background-color: aliceblue; */
+  border: 1px solid #154853;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+#banner .banner-text button {
+  margin-top: 5px;
+  padding: 15px;
+  border: none;
+  background-color: #154853;
+  color: #fff;
+  transition: color 0.8s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#banner .banner-text button:hover {
+  background-color: #fff;
+  color: #18869c;
+  transition: 0.8s;
+  font-weight: bold;
+}
+/* ==================About Us================ */
+#about-us {
+  padding: 50px;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#about-us img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+#about-us h2 {
+  font-size: 26px;
+  margin-top: 40px;
+}
+#about-us p {
+  width: 400px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* =========Services================== */
+#section3 {
+  background-color: #18869c;
+  height: 600px;
+}
+#section3 img {
+  padding: 15px 5px 0px;
+  width: 350px;
+}
+#section3 h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
+#section3 .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#section3 .content article {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 10px;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+#section3 .content article p {
+  font-size: 12px;
+  padding: 0px 10px;
+}
+/* ===================Contact Us================== */
+#contact-us {
+  padding: 10px;
+  font-family: sans-serif; 
+  height: 400px;
+  display: flex;
+}
+#contact-us .form {
+  margin: 20px 100px;
+}
+#contact-us .form fieldset {
+  border: none;
+}
+#contact-us .form fieldset form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+#contact-us .form fieldset form legend {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+#contact-us .form fieldset form .input-box {
+  padding-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-us .form fieldset form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-align: left;
+}
+#contact-us .form fieldset form input[type="text"],
+#contact-us .form fieldset form input[type="email"]{
+  padding: 5px;
+}
+#contact-us .form fieldset form input[type="text"],
+#contact-us .form fieldset form input[type="email"],
+#contact-us .form fieldset form textarea{
+  border-radius: 10px;
+  border-color: #cff7ff;
+}
+#contact-us .form fieldset form textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  resize: none;
+}
+#contact-us .form fieldset form input[type="submit"] {
+  padding: 10px 0px;
+  border-radius: 13px;
+  border-color: #18869c;
+  background-color: #18869c;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+#contact-us .form fieldset form input:focus,
+#contact-us .form fieldset form textarea:focus{
+  outline: none;
+}
+#contact-us .content {
+  margin-left: 120px;
+}
+#contact-us .content h4 {
+  text-align: center;
+}
+#contact-us .content table{
+  border-collapse: separate;
+  padding-top: 30px;
+}
+#contact-us .content table th {
+  color: #fff;
+  background-color: #000!important;
+}
+#contact-us .content table th,
+#contact-us .content table td {
+  border-radius: 20px;
+}
+#contact-us .content table th,
+#contact-us .content table td {
+  padding: 5px 10px;
+}
+#contact-us .content table tr:nth-child(odd) {
+    background-color: #8fd2df;
+  }
+
+  /* ================Footer============= */
+footer {
+  background-color: #18869c;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .logo a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 50px;
+}
